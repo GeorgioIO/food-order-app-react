@@ -10,7 +10,9 @@ export default function Meals() {
     async function loadMeals() {
       setIsFetching(true);
       try {
-        const response = await fetch("http://localhost:3000/meals");
+        const response = await fetch(
+          "https://food-order-app-react-g63r.onrender.com/meals",
+        );
         const fetchedMeals = await response.json();
 
         if (!response.ok) {

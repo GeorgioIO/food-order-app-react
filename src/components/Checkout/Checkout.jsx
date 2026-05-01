@@ -14,13 +14,16 @@ import { currencyFormatter } from "../../utils/formatting";
 
 async function addOrder(order, showResult) {
   try {
-    const response = await fetch("http://localhost:3000/orders", {
-      method: "POST",
-      body: JSON.stringify(order),
-      headers: {
-        "Content-Type": "application/json",
+    const response = await fetch(
+      "https://food-order-app-react-g63r.onrender.com/orders",
+      {
+        method: "POST",
+        body: JSON.stringify(order),
+        headers: {
+          "Content-Type": "application/json",
+        },
       },
-    });
+    );
 
     if (!response.ok) {
       return {
