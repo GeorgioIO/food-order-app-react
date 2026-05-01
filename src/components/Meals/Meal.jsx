@@ -10,7 +10,10 @@ export default function Meal({ meal }) {
   return (
     <li className="meal-item">
       <article>
-        <img src={`http://localhost:3000/${image}`} alt={description} />
+        <img
+          src={`https://food-order-app-react-g63r.onrender.com/${image}`}
+          alt={description}
+        />
         <div>
           <h3>{name}</h3>
           <p className="meal-item-price">${price}</p>
