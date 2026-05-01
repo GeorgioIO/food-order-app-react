@@ -28,7 +28,7 @@ export default function Meals() {
 
   return (
     <>
-      {isFetching && <p>Fetching meals...</p>}
+      {isFetching && <div className="loading">Loading meals...</div>}
       {!isFetching && error && <div className="error">{error.message}</div>}
       {!isFetching && !error && meals.length > 0 && (
         <ul id="meals">

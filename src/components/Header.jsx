@@ -5,15 +5,10 @@ import CartModal from "./Cart/Cart";
 import { UserProgressContext } from "../store/user-progress-context";
 
 export default function Header() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
   const userProgressCtx = use(UserProgressContext);
 
   function handleShowCart() {
     userProgressCtx.showCart();
-  }
-
-  function handleCloseModal() {
-    setModalIsOpen(false);
   }
 
   return (
