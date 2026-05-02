@@ -5,7 +5,7 @@ export default function CartButton({ onOpenModal }) {
   const cartCtx = use(CartContext);
 
   const totalCartItems = cartCtx.items.reduce((totalNumberOfItems, item) => {
-    return totalCartItems + item.quantity;
+    return totalNumberOfItems + item.quantity;
   }, 0);
 
   return (
