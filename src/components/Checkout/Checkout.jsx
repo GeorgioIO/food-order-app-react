@@ -140,6 +140,7 @@ export default function Checkout() {
           placeholder="John Doe"
           error={formState.errors?.fullName}
           defaultValue={formState.enteredValues?.fullName}
+          autoComplete="off"
         />
 
         <Input
@@ -150,6 +151,7 @@ export default function Checkout() {
           placeholder="test@gmail.com"
           error={formState.errors?.email}
           defaultValue={formState.enteredValues?.email}
+          autoComplete="off"
         />
 
         <Input
@@ -159,6 +161,7 @@ export default function Checkout() {
           name="street"
           error={formState.errors?.street}
           defaultValue={formState.enteredValues?.street}
+          autoComplete="off"
         />
 
         <div className="control-row">
@@ -169,6 +172,7 @@ export default function Checkout() {
             name="postalCode"
             error={formState.errors?.postalCode}
             defaultValue={formState.enteredValues?.postalCode}
+            autoComplete="off"
           />
           <Input
             label="City"
@@ -177,6 +181,7 @@ export default function Checkout() {
             name="city"
             error={formState.errors?.city}
             defaultValue={formState.enteredValues?.city}
+            autoComplete="off"
           />
         </div>
         <p className="modal-actions">
